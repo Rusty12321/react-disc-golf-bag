@@ -1,0 +1,4 @@
+INSERT INTO disc (name, type_of_plastic, type_of_disc, weight_in_grams, color, speed, glide, turn, fade, bag_or_storage, company_name) VALUES ('Falcon', 'Sirius', 'Distance Driver', 172, 'Yellow', 13, 5, -2, 2, 'bag', 'Millennium');
+INSERT INTO disc (name, type_of_plastic, type_of_disc, weight_in_grams, color, speed, glide, turn, fade, bag_or_storage, company_name) VALUES ('Scorpius', 'Sirius', 'Distance Driver', 170, 'Yellow', 12, 5, -1, 3, 'bag', 'Millennium');
+INSERT INTO disc (name, type_of_plastic, type_of_disc, weight_in_grams, color, speed, glide, turn, fade, bag_or_storage, company_name) VALUES ('Lion', 'DX', 'Mid-Range', 177, 'White', 5, 4, 0, 2, 'storage', 'Innova');
+INSERT INTO disc (name, type_of_plastic, type_of_disc, weight_in_grams, color, speed, glide, turn, fade, bag_or_storage, company_name) VALUES ('Aviar', 'Champion', 'Putt & Approach', 173, 'Pink', 2, 3, 0, 1, 'storage', 'Innova');
