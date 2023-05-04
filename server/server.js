@@ -10,7 +10,10 @@ const { Pool } = pg;
 const pool = new Pool({ connectionString: process.env.DATABASE_URL });
 pool.connect();
 
+const cors = require("cors");
+
 app.use(express.json());
+app.use(cors());
 
 app.get("/api/discs", (req, res) => {
   pool.query("SELECT * FROM disc").then((result) => {
