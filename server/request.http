@@ -1,2 +1,40 @@
 ###
-GET http://localhost:3000/test
+GET http://localhost:3000/api/discs
+
+###
+GET http://localhost:3000/api/discs/1
+
+###
+GET http://localhost:3000/api/bag
+
+###
+GET http://localhost:3000/api/storage
+
+###
+POST http://localhost:3000/api/discs
+Content-Type: application/json
+
+{
+    "name": "Cro",
+    "type_of_plastic": "Star",
+    "type_of_disc": "Mid-Range",
+    "weight_in_grams": 176,
+    "color": "Pink",
+    "speed": 5,
+    "glide": 3,
+    "turn": 0,
+    "fade": 2,
+    "bag_or_storage": "bag",
+    "company_name": "Innova"
+}
+
+###
+PATCH  http://localhost:3000/api/discs/5
+Content-Type: application/json
+
+{
+    "color": "tie dye pink"
+}
+
+###
+DELETE  http://localhost:3000/api/discs/5
