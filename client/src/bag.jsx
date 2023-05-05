@@ -1,10 +1,6 @@
-import React, { useRef } from "react";
+import React from "react";
 
 const Bag = (props) => {
-
-  const dragEnter = (e) => {
-    props.dragOverItem.current = e.target.className;
-  }
 
   const drop = (id) => {
     if (props.dragOverItem.current.includes("storage")) {
@@ -33,7 +29,7 @@ const Bag = (props) => {
   }
 
   return (
-    <div className="bag" onDragEnter={(e) => dragEnter(e)}>
+    <div className="bag" >
       {props.bag.map((disc, index) => (
         <div
           className="bagDisc"

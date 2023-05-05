@@ -37,6 +37,10 @@ function App() {
     setAddOrEdit(id);
   }
 
+  const dragEnter = (e) => {
+    dragOverItem.current = e.target.className;
+  }
+
   let discProps = {
     bag,
     setBag,
@@ -54,12 +58,12 @@ function App() {
 
   if (page === "main") {
     return (
-      <div className='container'>
-        <div>
+      <div className='wholeContainer'>
+        <div className='bagContainer' onDragEnter={(e) => dragEnter(e)}>Bag
           <button id='addToBag' className="button" onClick={() => changePage("bag")}>Add</button>
           <Bag {...discProps}/>
         </div>
-        <div>
+        <div className='storageContainer' onDragEnter={(e) => dragEnter(e)}>Storage
           <button id='addToStorage' className="button" onClick={() => changePage("storage")}>Add</button>
           <Storage {...discProps}/>
         </div>
