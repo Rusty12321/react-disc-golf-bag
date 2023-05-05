@@ -3,7 +3,7 @@ import React from "react";
 const addForm = (props) => {
   function addOrEditDisc() {
     if (!props.addOrEdit) {
-      fetch("http://localhost:3000/api/discs", {
+      fetch("/api/discs", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -15,7 +15,7 @@ const addForm = (props) => {
         props.getStorage();
       });
     } else {
-      fetch(`http://localhost:3000/api/discs/${props.addOrEdit}`, {
+      fetch(`/api/discs/${props.addOrEdit}`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
@@ -46,7 +46,7 @@ const addForm = (props) => {
   }
 
   if (props.addOrEdit) {
-    fetch(`http://localhost:3000/api/discs/${props.addOrEdit}`)
+    fetch(`/api/discs/${props.addOrEdit}`)
       .then((result) => result.json())
       .then((data) => {
         document.getElementById("name").value = data[0].name;

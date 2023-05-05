@@ -17,7 +17,7 @@ function App() {
   }, [])
 
   function getBag() {
-    fetch('http://localhost:3000/api/bag')
+    fetch('/api/bag')
       .then((result) => result.json())
       .then((data) => {
           setBag(data)
@@ -25,7 +25,7 @@ function App() {
   }
 
   function getStorage() {
-    fetch('http://localhost:3000/api/storage')
+    fetch('/api/storage')
       .then((result) => result.json())
       .then((data) => {
           setStorage(data)
