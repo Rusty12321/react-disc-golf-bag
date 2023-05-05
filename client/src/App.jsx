@@ -9,7 +9,7 @@ function App() {
   const [storage, setStorage] = useState([])
   const [page, setPage] = useState("main")
   const dragOverItem = useRef();
-  let addOrEdit;
+  const [addOrEdit, setAddOrEdit] = useState(null)
 
   useEffect(() => {
     getBag()
@@ -32,9 +32,9 @@ function App() {
       })
   }
 
-  function changePage(location, type) {
+  function changePage(location, id) {
     setPage(location)
-    addOrEdit = type;
+    setAddOrEdit(id);
   }
 
   let discProps = {
@@ -48,7 +48,8 @@ function App() {
     getBag,
     getStorage,
     dragOverItem,
-    addOrEdit
+    addOrEdit,
+    setAddOrEdit
   }
 
   if (page === "main") {

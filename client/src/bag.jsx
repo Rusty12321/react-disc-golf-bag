@@ -47,7 +47,7 @@ const Bag = (props) => {
           {disc.speed}, Glide: {disc.glide}, Turn: {disc.turn}, Fade:{" "}
           {disc.fade}
           <div className="discButtons">
-            <button id={"editBtn_"+disc.id} className="button" onClick={() => props.changePage("bag")}>edit</button>
+            <button id={"editBtn_"+disc.id} className="button" onClick={() => props.changePage("bag", disc.id)}>edit</button>
             <button id={"deleteBtn_"+disc.id} className="button" onClick={() => removeDisc(disc.id)}>delete</button>
           </div>
         </div>
