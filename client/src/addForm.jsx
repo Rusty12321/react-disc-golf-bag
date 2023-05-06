@@ -78,7 +78,6 @@ const addForm = (props) => {
             type="text"
             id="manufacturer"
             className="add-inputs"
-            defaultValue="Innova"
           />
         </div>
         <div>
@@ -87,7 +86,6 @@ const addForm = (props) => {
             type="text"
             id="name"
             className="add-inputs"
-            defaultValue="Cro"
           />
         </div>
         <div>
@@ -96,7 +94,6 @@ const addForm = (props) => {
             type="text"
             id="plastic-type"
             className="add-inputs"
-            defaultValue="Star"
           />
         </div>
         <div>
@@ -105,7 +102,6 @@ const addForm = (props) => {
             type="text"
             id="color"
             className="add-inputs"
-            defaultValue="Pink"
           />
         </div>
         <div>
@@ -114,7 +110,6 @@ const addForm = (props) => {
             type="text"
             id="disc-type"
             className="add-inputs"
-            defaultValue="Mid-Range"
           />
         </div>
         <div>
@@ -123,7 +118,6 @@ const addForm = (props) => {
             type="text"
             id="weight"
             className="add-inputs"
-            defaultValue="176"
           />
         </div>
         <div>
@@ -132,7 +126,6 @@ const addForm = (props) => {
             type="text"
             id="speed"
             className="add-inputs"
-            defaultValue={5}
           />
         </div>
         <div>
@@ -141,7 +134,6 @@ const addForm = (props) => {
             type="text"
             id="glide"
             className="add-inputs"
-            defaultValue={3}
           />
         </div>
         <div>
@@ -150,7 +142,6 @@ const addForm = (props) => {
             type="text"
             id="turn"
             className="add-inputs"
-            defaultValue={0}
           />
         </div>
         <div>
@@ -159,7 +150,6 @@ const addForm = (props) => {
             type="text"
             id="fade"
             className="add-inputs"
-            defaultValue={2}
           />
         </div>
       </div>
