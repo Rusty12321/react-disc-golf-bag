@@ -3,7 +3,7 @@ import React from "react";
 const addForm = (props) => {
   function addOrEditDisc() {
     if (!props.addOrEdit) {
-      fetch("/api/discs", {
+      fetch("http://localhost:3000/api/discs", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -15,7 +15,7 @@ const addForm = (props) => {
         props.getStorage();
       });
     } else {
-      fetch(`/api/discs/${props.addOrEdit}`, {
+      fetch(`http://localhost:3000/api/discs/${props.addOrEdit}`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
@@ -46,7 +46,7 @@ const addForm = (props) => {
   }
 
   if (props.addOrEdit) {
-    fetch(`/api/discs/${props.addOrEdit}`)
+    fetch(`http://localhost:3000/api/discs/${props.addOrEdit}`)
       .then((result) => result.json())
       .then((data) => {
         document.getElementById("name").value = data[0].name;
@@ -73,84 +73,44 @@ const addForm = (props) => {
       </button>
       <div className="addForm">
         <div>
-          Manufacturer:
-          <input
-            type="text"
-            id="manufacturer"
-            className="add-inputs"
-          />
+          <div>Manufacturer:</div>
+          <input type="text" id="manufacturer" className="add-inputs" />
         </div>
         <div>
-          Disc Name:
-          <input
-            type="text"
-            id="name"
-            className="add-inputs"
-          />
+          <div>Disc Name:</div>
+          <input type="text" id="name" className="add-inputs" />
         </div>
         <div>
-          Type of Plastic:
-          <input
-            type="text"
-            id="plastic-type"
-            className="add-inputs"
-          />
+          <div>Type of Plastic:</div>
+          <input type="text" id="plastic-type" className="add-inputs" />
         </div>
         <div>
-          Color:
-          <input
-            type="text"
-            id="color"
-            className="add-inputs"
-          />
+          <div>Color:</div>
+          <input type="text" id="color" className="add-inputs" />
         </div>
         <div>
-          Type of Disc (ie. Driver, Mid-Range, Putter):
-          <input
-            type="text"
-            id="disc-type"
-            className="add-inputs"
-          />
+          <div>Type of Disc (ie. Driver, Mid-Range, Putter):</div>
+          <input type="text" id="disc-type" className="add-inputs" />
         </div>
         <div>
-          Weight in Grams:
-          <input
-            type="text"
-            id="weight"
-            className="add-inputs"
-          />
+          <div>Weight in Grams:</div>
+          <input type="text" id="weight" className="add-inputs" />
         </div>
         <div>
-          Speed:
-          <input
-            type="text"
-            id="speed"
-            className="add-inputs"
-          />
+          <div>Speed:</div>
+          <input type="text" id="speed" className="add-inputs" />
         </div>
         <div>
-          Glide:
-          <input
-            type="text"
-            id="glide"
-            className="add-inputs"
-          />
+          <div>Glide:</div>
+          <input type="text" id="glide" className="add-inputs" />
         </div>
         <div>
-          Turn:
-          <input
-            type="text"
-            id="turn"
-            className="add-inputs"
-          />
+          <div>Turn:</div>
+          <input type="text" id="turn" className="add-inputs" />
         </div>
         <div>
-          Fade:
-          <input
-            type="text"
-            id="fade"
-            className="add-inputs"
-          />
+          <div>Fade:</div>
+          <input type="text" id="fade" className="add-inputs" />
         </div>
       </div>
       <button id="submitBtn" className="button" onClick={addOrEditDisc}>
