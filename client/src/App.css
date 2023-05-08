@@ -103,14 +103,57 @@ header {
   display: flex;
   flex-direction: column;
   padding: 5px;
-  /* text-align: right; */
 }
 
 .add-inputs {
   margin-bottom: 15px;
 }
 
+.add-inputs::placeholder {
+  color: red;
+}
+
 .bagDisc:hover,
 .storageDisc:hover {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.searchContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+}
+
+.dropDown {
+  max-height: 175px;
+  overflow: scroll;
+  overflow-x: hidden;
+  position: absolute;
+  top: 17px;
+  background-color: white;
+  width: 180px;
+  
+}
+
+#searchBar {
+  border: none;
+}
+
+.navBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  max-height: 25px;
+}
+
+#homeBtn {
+  height: fit-content;
+}
+
+.searchedDisc:hover {
+  background-color: darkgrey;
 }
