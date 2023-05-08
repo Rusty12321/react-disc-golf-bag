@@ -80,6 +80,7 @@ header {
 .storageDisc {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   margin-top: 5px;
   margin-bottom: 10px;
@@ -102,10 +103,11 @@ header {
   display: flex;
   flex-direction: column;
   padding: 5px;
+  /* text-align: right; */
 }
 
 .add-inputs {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .bagDisc:hover,
