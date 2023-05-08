@@ -4,7 +4,7 @@ const Storage = (props) => {
 
   const drop = (id) => {
     if (props.dragOverItem.current.includes("bag")) {
-        fetch(`/api/discs/${id}`, {
+        fetch(`http://localhost:3000/api/discs/${id}`, {
             method: "PATCH",
             headers: {
                 "Content-Type": "application/json"
@@ -21,7 +21,7 @@ const Storage = (props) => {
   }
 
   function removeDisc(id) {
-    fetch(`/api/discs/${id}`, {
+    fetch(`http://localhost:3000/api/discs/${id}`, {
         method: "DELETE",
     }).then(() => {
         props.getStorage();
