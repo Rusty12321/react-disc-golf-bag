@@ -6,7 +6,7 @@ const data =() => {
         .then(result => result.json())
         .then(data => {
             data.map((disc) => {
-                discs.push({name: disc.name})
+                discs.push({name: disc.name, brand: disc.brand})
             })
         })
     return discs;

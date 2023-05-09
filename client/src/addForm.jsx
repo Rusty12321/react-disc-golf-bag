@@ -138,7 +138,7 @@ const addForm = (props) => {
                 if (query === "") {
                   return;
                 } else if (
-                  disc.name.toLowerCase().includes(query.toLowerCase())
+                  disc.name.toLowerCase().includes(query.toLowerCase()) || disc.brand.toLowerCase().includes(query.toLowerCase())
                 ) {
                   return disc;
                 }
@@ -149,7 +149,7 @@ const addForm = (props) => {
                   className="searchedDisc"
                   onClick={() => handleClick(disc.name.toLowerCase())}
                 >
-                  <p>{disc.name}</p>
+                  <p>{disc.brand}: {disc.name}</p>
                 </div>
               ))}
           </div>
