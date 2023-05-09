@@ -1,11 +1,11 @@
 # React Disc Golf Bag
 
 
-This is a JavaScript React web application for managing a disc golf inventory. It allows you to add, remove, edit, and move discs between your bag and storage.
+This is a JavaScript React web application for managing a disc golf inventory. It allows you to add, remove, edit, and move discs between your bag and storage. I used an external API from https://github.com/cdleveille/discit-api for the search feature.
 
 ## How to Use
 
-To use this application, simply open https://my-disc-golf-bag.onrender.com/ in your web browser, or to run this locally you will need to copy the migration.sql and seed.sql files into a database and in the index.js file add "http://localhost:3000/" to the front of the fetch routes. This will display the main page of the application, which shows your current disc inventory in your bag and storage.
+To use this application locally, you will need to copy the migration.sql and seed.sql files into a database. This will display the main page of the application, which shows your current disc inventory in your bag and storage.
 
 To add a new disc, click one of the "Add" button at the top of the page, the one under "Bag" will add a new disc to the bag section and the one under storage will add a new disc to the storage section. Clicking the "Add" button will display a form where you can enter the details of the new disc, such as its manufacturer, name, type of plastic, type of disc, color, weight, speed, glide, turn, and fade.
 
